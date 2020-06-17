@@ -1,32 +1,7 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.5;
-  color: #650300
-}
-
-a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-.container {
-  max-width: 1224px;
-  margin: 0 auto;
-  padding-right: 12px;
-  padding-left: 12px;
-}
 
 /* 導行欄 */
 .navbar {
-  background-color: $primary;
+  background-color: $secondary;
   padding: 30px 0;
 }
 
@@ -59,7 +34,7 @@ h2 {
 
 /* footer */
 .footer {
-  background-color: $primary;
+  background-color: $secondary;
   padding-top: 36px;
   padding-bottom: 28px;
   a {
@@ -93,6 +68,7 @@ h2 {
   border-bottom: 1px solid $light;
   margin-bottom: 24px;
   li {
+    display: flex;
     margin-bottom: 22px;
   }
   .tel {
@@ -106,41 +82,24 @@ h2 {
   }
 }
 
-
-
-
-
-/* header */
-.header {
-  height: 840px;
-  background-image: url(../img/banner.png);
-  background-position: center center;
-  border-style: cover;
-}
-
-.banner {
+.footer-copyright-list {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.footer-copyright-item {
+  display: flex;
   align-items: center;
-}
-
-.banner-title {
-  text-align: right;
-}
-
-.banner-title h1 {
-  font-size: 64px;
-}
-
-.banner-title h2 {
-  font-size: 36px;
-}
-
-/* utilities */
-.h-100 {
-  height: 100%;
-}
-
-.text-primary {
-  color: #650300
+  img {
+    margin-right: 38px;
+  }
+  p {
+    color: $light;
+  }
+  a {
+    font-size: 14px;
+  }
+  a:first-child {
+    margin-right: 62px;
+  }
 }
