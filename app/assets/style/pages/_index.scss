@@ -1,5 +1,5 @@
 /* header */
-.header {
+.headerIndex {
   height: 840px;
   background-image: url(../images/banner.png);
   @include bg-center;
@@ -39,7 +39,7 @@
     img {
       margin-bottom: 40px;
     }
-    h4 {
+    h5 {
       text-align: center;
       margin-bottom: 4px;
     }
@@ -196,16 +196,34 @@ padding-bottom: 400px;
     margin-right: 4px;
   }
 }
+// .contactFormSubmit {
+//   background-color: $secondary;
+//   width: 180px;
+//   height: 54px;
+//   margin: 0 auto;
+//   padding:16px 58px;
+//   text-decoration: none;
+//   a {
+//     color: $light;
+//     font-weight: bold;
+//     text-decoration: none;
+//   }
+//   .btn:hover {
+//     background-color: $primary;
+//   }
+// }
 .contactFormSubmit {
-  background-color: $secondary;
-  width: 180px;
-  height: 54px;
-  margin: 0 auto;
-  padding:16px 58px;
-  text-decoration: none;
-  a {
-    color: $light;
+  text-align: center;
+  .btn-submit {
+    font-size: 16px;
     font-weight: bold;
-    text-decoration: none;
+    border: none;
+    background-color: $secondary;
+    padding: 16px 58px;
+    color: $light;
+    transition: background .1s;
+    &:hover {
+      background-color: $primary;
+    }
   }
 }
