@@ -94,22 +94,118 @@
   filter: grayscale(0%);
 }
 
+/* joint */
 .joint {
   background-image: url(../images/bg.png);
   @include bg-center;
 padding-top: 64px;
-padding-bottom: 497px;
+padding-bottom: 400px;
   h2 {
     text-align: center;
     color: $light;
     margin-bottom: 60px;
   }
 }
+
+/* customer */
 .customer {
-  margin-top: -398px;
+  margin-top: -293px;
+  padding-bottom: 80px;
   h2 {
     text-align: center;
     color: $light;
     margin-bottom: 60px;
+  }
+  ul {
+    display: flex;
+    // margin-bottom: 80px;
+  }
+  li {
+    width: 25%;
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.customerItemText {
+  padding: 16px;
+  border: 1px solid $border;
+  border-top: unset;
+  color: $customerItemText;
+  background: $light;
+}
+.customerItemTextName {
+  line-height: 21px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.customerItemTextContent {
+  margin-bottom: 16px;
+}
+.customerItemTextDate {
+  line-height: 21px;
+  color: $text-med;
+}
+
+/* contact */
+.contact {
+  background: $third;
+  padding-top: 64px;
+  padding-bottom: 92px;
+  color: $text-dark;
+}
+.contactContainer {
+  max-width: 792px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
+.contactText {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.contactForm {
+  .contactFormGroup {
+    margin-bottom: 16px;
+    label {
+      display: block;
+      margin-bottom: 4px;
+    }
+    input, textarea {
+      padding: 14px 16px;
+      border: 1px solid #000;
+      width: 100%;
+      background-color: transparent;
+      font-size: 16px;
+    }
+    textarea {
+      height: 136px;
+    }
+  }
+}
+.contactFormCheck {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+  input[type="checkbox"] {
+    width: 24px;
+    height: auto;
+    margin-right: 4px;
+  }
+}
+.contactFormSubmit {
+  background-color: $secondary;
+  width: 180px;
+  height: 54px;
+  margin: 0 auto;
+  padding:16px 58px;
+  text-decoration: none;
+  a {
+    color: $light;
+    font-weight: bold;
+    text-decoration: none;
   }
 }
